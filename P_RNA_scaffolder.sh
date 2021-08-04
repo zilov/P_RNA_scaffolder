@@ -187,7 +187,7 @@ elif [[ $vardir -eq 1 ]] && [[ $varsam -eq 1 ]] && [[ $varfasta -eq 1 ]] && [[ $
         wait
         `cat $output/scaffold.fasta $output/unscaffold.fasta >$output/P_RNA_scaffold.fasta`;
 
-exit 1
+exit 0
 
 else
         echo "Usage: sh `basename $0` -d Program_DIR -i inputfile.sam -j contig.fasta -F read_1.fastq -R read_2.fastq -s yes";
