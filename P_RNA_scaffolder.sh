@@ -186,6 +186,7 @@ elif [[ $vardir -eq 1 ]] && [[ $varsam -eq 1 ]] && [[ $varfasta -eq 1 ]] && [[ $
         perl $directory/generate_scaffold.pl $contig $output/both.path P_RNA_scaffold_ > $output/scaffold.fasta & perl $directory/generate_unscaffold.pl $contig $output/scaffolded.fragment.id  > $output/unscaffold.fasta
         wait
         `cat $output/scaffold.fasta $output/unscaffold.fasta >$output/P_RNA_scaffold.fasta`;
+	echo "P_RNA_scaffoder complete successfully!";
 
 exit 0
 
